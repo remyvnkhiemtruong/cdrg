@@ -1,99 +1,93 @@
-<!doctype html>
-<html lang="vi" data-theme="dark">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Regeneration</title>
-  <meta name="description" content="Regeneration — Cộng đồng game thủ lưu giữ kỷ niệm." />
-  <meta name="theme-color" content="#0b1020" />
-  <link rel="icon" href="assets/img/logo.svg" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <!-- Google Analytics (thay GA_MEASUREMENT_ID của bạn) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
-  </script> -->
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regeneration - Cộng đồng Game thủ</title>
+  <link rel="icon" href="assets/images/logo.png" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-0b07LdhT8H1jASpyxfaKjGLumZ5qX6Ch12yvDqOiiMHDL/95B2S/bR5E2lE8pQnXl16rDpD+s/COM24kTx5gYg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Trang chủ">
-        <img src="assets/img/logo.svg" alt="Logo Regeneration" width="34" height="34"/>
-        <span>Regeneration</span>
-      </a>
-      <nav id="menu" class="menu" aria-label="Main">
-        <a data-i18n="nav.home" href="index.html">Trang chủ</a>
-        <a data-i18n="nav.news" href="news.html">Tin tức</a>
-        <a data-i18n="nav.tournaments" href="tournaments.html">Giải đấu</a>
-        <a data-i18n="nav.gallery" href="gallery.html">Thư viện</a>
-        <a data-i18n="nav.memories" href="memories.html">Kỷ niệm</a>
-        <a data-i18n="nav.blog" href="blog.html">Blog</a>
-        <a data-i18n="nav.discord" href="discord.html">Discord</a>
-        <a data-i18n="nav.about" href="about.html">About/Team</a>
-        <a data-i18n="nav.contact" href="contact.html">Liên hệ</a>
-      </nav>
-      <div class="actions">
-        <button id="themeBtn" class="btn ghost" aria-label="Đổi giao diện">🌙</button>
-        <select id="langSelect" class="lang-select" aria-label="Language">
-          <option value="vi">VI</option>
-          <option value="en">EN</option>
-        </select>
-        <button id="toggleMenu" class="btn ghost mobile-toggle" aria-controls="menu" aria-expanded="false">☰</button>
-      </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="logo" />
+      <span class="site-title">Regeneration</span>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="lang-vi">Trang chủ</a><a href="index.html" class="lang-en">Home</a></li>
+        <li><a href="news.html" class="lang-vi">Tin tức</a><a href="news.html" class="lang-en">News</a></li>
+        <li><a href="tournaments.html" class="lang-vi">Giải đấu</a><a href="tournaments.html" class="lang-en">Tournaments</a></li>
+        <li><a href="gallery.html" class="lang-vi">Thư viện</a><a href="gallery.html" class="lang-en">Gallery</a></li>
+        <li><a href="memory.html" class="lang-vi">Kỷ niệm</a><a href="memory.html" class="lang-en">Memory</a></li>
+        <li><a href="blog.html" class="lang-vi">Blog</a><a href="blog.html" class="lang-en">Blog</a></li>
+        <li><a href="about.html" class="lang-vi">Giới thiệu</a><a href="about.html" class="lang-en">About</a></li>
+        <li><a href="contact.html" class="lang-vi">Liên hệ</a><a href="contact.html" class="lang-en">Contact</a></li>
+        <li><a href="rules.html" class="lang-vi">Nội quy</a><a href="rules.html" class="lang-en">Rules</a></li>
+      </ul>
+    </nav>
+    <div class="controls">
+      <button id="langViBtn">VI</button>
+      <button id="langEnBtn">EN</button>
+      <button id="themeToggle"><i class="fa fa-adjust"></i></button>
     </div>
   </header>
-
-
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <span class="tag" data-i18n="hero.tag">Cộng đồng game thủ • Regeneration</span>
-      <h1 data-i18n="hero.title">Lưu giữ những kỷ niệm của cộng đồng</h1>
-      <p class="notice">tao can het</p>
-      <div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem">
-        <a class="btn" data-i18n="hero.cta" href="memories.html">Xem Kỷ niệm</a>
-        <a class="btn ghost" href="https://discord.gg/8NHd7aAab2">Discord</a>
-      </div>
-      <div style="margin-top:1.5rem">
-        <input id="siteSearch" class="input" type="search" data-i18n-placeholder="search.placeholder" placeholder="Tìm kiếm..." />
-      </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1><span class="lang-vi">Chào mừng đến với cộng đồng Regeneration</span><span class="lang-en">Welcome to the Regeneration community</span></h1>
+      <p>
+        <span class="lang-vi">Nơi lưu giữ những khoảnh khắc và kỷ niệm của game thủ, nơi bạn có thể chia sẻ, kết nối và cùng nhau phát triển.</span>
+        <span class="lang-en">A place to preserve memories and moments of gamers, where you can share, connect and grow together.</span>
+      </p>
+      <a href="discord.html" class="cta-button"><span class="lang-vi">Tham gia Discord</span><span class="lang-en">Join Discord</span></a>
     </div>
   </section>
+  <!-- Features Section -->
   <section class="section">
-    <div class="container grid cols-3">
-      <div class="card" data-searchable>
-        <h3>Tin mới</h3>
-        <p>Cập nhật hoạt động hàng tuần, recap sự kiện và thông báo.</p>
-        <a class="btn ghost" href="news.html">Xem Tin tức</a>
+    <h2><span class="lang-vi">Khám phá</span><span class="lang-en">Explore</span></h2>
+    <div class="cards">
+      <div class="card">
+        <h3><span class="lang-vi">Tin tức</span><span class="lang-en">News</span></h3>
+        <p><span class="lang-vi">Cập nhật thông tin mới nhất về cộng đồng và thế giới game.</span><span class="lang-en">Stay updated with the latest news about our community and the gaming world.</span></p>
+        <a href="news.html"><span class="lang-vi">Xem thêm</span><span class="lang-en">View more</span></a>
       </div>
-      <div class="card" data-searchable>
-        <h3>Giải đấu</h3>
-        <p>Lịch giải, luật, đăng ký tham dự và kết quả.</p>
-        <a class="btn ghost" href="tournaments.html">Vào Giải đấu</a>
+      <div class="card">
+        <h3><span class="lang-vi">Giải đấu</span><span class="lang-en">Tournaments</span></h3>
+        <p><span class="lang-vi">Tham gia các giải đấu hấp dẫn và đối đầu với những đối thủ mạnh.</span><span class="lang-en">Join exciting tournaments and face off against formidable opponents.</span></p>
+        <a href="tournaments.html"><span class="lang-vi">Xem thêm</span><span class="lang-en">View more</span></a>
       </div>
-      <div class="card" data-searchable>
-        <h3>Thư viện</h3>
-        <p>Ảnh & video kỷ niệm của cộng đồng (lazy-load).</p>
-        <a class="btn ghost" href="gallery.html">Mở Thư viện</a>
+      <div class="card">
+        <h3><span class="lang-vi">Thư viện</span><span class="lang-en">Gallery</span></h3>
+        <p><span class="lang-vi">Khám phá những hình ảnh và video nổi bật của cộng đồng.</span><span class="lang-en">Explore highlighted images and videos from the community.</span></p>
+        <a href="gallery.html"><span class="lang-vi">Xem thêm</span><span class="lang-en">View more</span></a>
+      </div>
+      <div class="card">
+        <h3><span class="lang-vi">Kỷ niệm</span><span class="lang-en">Memory</span></h3>
+        <p><span class="lang-vi">Lưu giữ và chia sẻ kỷ niệm đáng nhớ của bạn.</span><span class="lang-en">Preserve and share your memorable moments.</span></p>
+        <a href="memory.html"><span class="lang-vi">Xem thêm</span><span class="lang-en">View more</span></a>
+      </div>
+      <div class="card">
+        <h3><span class="lang-vi">Blog</span><span class="lang-en">Blog</span></h3>
+        <p><span class="lang-vi">Đọc những bài viết hấp dẫn về kinh nghiệm và câu chuyện game.</span><span class="lang-en">Read engaging posts about experiences and gaming stories.</span></p>
+        <a href="blog.html"><span class="lang-vi">Xem thêm</span><span class="lang-en">View more</span></a>
       </div>
     </div>
   </section>
-
-
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <div>© <span id="year"></span> Regeneration — <span data-i18n="footer.by">Xây dựng bởi cộng đồng</span> ♥</div>
-      <div class="socials">
-        <a href="https://discord.gg/8NHd7aAab2" aria-label="Discord">Discord</a>
-      </div>
-    </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Regeneration. <span class="lang-vi">Mọi quyền được bảo lưu.</span><span class="lang-en">All rights reserved.</span></p>
+    <p>
+      <span class="lang-vi">Theo dõi chúng tôi:</span><span class="lang-en">Follow us:</span>
+      <a href="https://discord.gg/8NHd7aAab2" target="_blank"><i class="fab fa-discord"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+    </p>
   </footer>
-  <script src="assets/js/i18n.js"></script>
-  <script src="assets/js/main.js"></script>
-
+  <script src="js/main.js" defer></script>
 </body>
 </html>

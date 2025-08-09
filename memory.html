@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Regeneration - Blog</title>
+  <title>Regeneration - Kỷ niệm / Memory</title>
   <link rel="icon" href="assets/images/logo.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-0b07LdhT8H1jASpyxfaKjGLumZ5qX6Ch12yvDqOiiMHDL/95B2S/bR5E2lE8pQnXl16rDpD+s/COM24kTx5gYg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
@@ -34,21 +34,20 @@
     </div>
   </header>
   <section class="section">
-    <h2><span class="lang-vi">Blog</span><span class="lang-en">Blog</span></h2>
-    <div class="blog-grid">
-      <div class="blog-post-card">
-        <h3><span class="lang-vi">Kinh nghiệm thi đấu eSports</span><span class="lang-en">eSports tournament experiences</span></h3>
-        <span class="date">01/08/2025</span>
-        <p><span class="lang-vi">Chia sẻ kinh nghiệm thi đấu chuyên nghiệp và bí quyết thành công...</span><span class="lang-en">Sharing professional tournament experiences and secrets to success...</span></p>
-        <a href="posts/post1.html"><span class="lang-vi">Đọc tiếp</span><span class="lang-en">Read more</span></a>
-      </div>
-      <div class="blog-post-card">
-        <h3><span class="lang-vi">Những khoảnh khắc đáng nhớ trong cộng đồng</span><span class="lang-en">Memorable moments in our community</span></h3>
-        <span class="date">15/07/2025</span>
-        <p><span class="lang-vi">Tổng hợp những kỷ niệm khó quên và câu chuyện của các thành viên...</span><span class="lang-en">Compilation of unforgettable memories and stories from members...</span></p>
-        <a href="posts/post2.html"><span class="lang-vi">Đọc tiếp</span><span class="lang-en">Read more</span></a>
-      </div>
+    <h2><span class="lang-vi">Kỷ niệm</span><span class="lang-en">Memory</span></h2>
+    <div class="memory-search">
+      <input id="memorySearch" type="text" placeholder="Tìm kiếm... / Search..." />
     </div>
+    <form id="memoryForm" class="memory-form">
+      <label for="memoryName"><span class="lang-vi">Tên (tùy chọn):</span><span class="lang-en">Name (optional):</span></label>
+      <input type="text" id="memoryName" />
+      <label for="memoryContent"><span class="lang-vi">Nội dung:</span><span class="lang-en">Content:</span></label>
+      <textarea id="memoryContent" rows="4" required></textarea>
+      <label for="memoryImage"><span class="lang-vi">Link ảnh (tùy chọn):</span><span class="lang-en">Image URL (optional):</span></label>
+      <input type="url" id="memoryImage" />
+      <button type="submit"><span class="lang-vi">Đăng</span><span class="lang-en">Post</span></button>
+    </form>
+    <div id="memoryPostsContainer" class="memory-posts"></div>
   </section>
   <footer class="footer">
     <p>&copy; 2025 Regeneration. <span class="lang-vi">Mọi quyền được bảo lưu.</span><span class="lang-en">All rights reserved.</span></p>
@@ -60,5 +59,6 @@
     </p>
   </footer>
   <script src="js/main.js" defer></script>
+  <script src="js/memory.js" defer></script>
 </body>
 </html>

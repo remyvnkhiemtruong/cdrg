@@ -1,77 +1,57 @@
-<!doctype html>
-<html lang="vi" data-theme="dark">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Regeneration</title>
-  <meta name="description" content="Regeneration — Cộng đồng game thủ lưu giữ kỷ niệm." />
-  <meta name="theme-color" content="#0b1020" />
-  <link rel="icon" href="assets/img/logo.svg" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <!-- Google Analytics (thay GA_MEASUREMENT_ID của bạn) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
-  </script> -->
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regeneration - Giới thiệu / About</title>
+  <link rel="icon" href="assets/images/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-0b07LdhT8H1jASpyxfaKjGLumZ5qX6Ch12yvDqOiiMHDL/95B2S/bR5E2lE8pQnXl16rDpD+s/COM24kTx5gYg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Trang chủ">
-        <img src="assets/img/logo.svg" alt="Logo Regeneration" width="34" height="34"/>
-        <span>Regeneration</span>
-      </a>
-      <nav id="menu" class="menu" aria-label="Main">
-        <a data-i18n="nav.home" href="index.html">Trang chủ</a>
-        <a data-i18n="nav.news" href="news.html">Tin tức</a>
-        <a data-i18n="nav.tournaments" href="tournaments.html">Giải đấu</a>
-        <a data-i18n="nav.gallery" href="gallery.html">Thư viện</a>
-        <a data-i18n="nav.memories" href="memories.html">Kỷ niệm</a>
-        <a data-i18n="nav.blog" href="blog.html">Blog</a>
-        <a data-i18n="nav.discord" href="discord.html">Discord</a>
-        <a data-i18n="nav.about" href="about.html">About/Team</a>
-        <a data-i18n="nav.contact" href="contact.html">Liên hệ</a>
-      </nav>
-      <div class="actions">
-        <button id="themeBtn" class="btn ghost" aria-label="Đổi giao diện">🌙</button>
-        <select id="langSelect" class="lang-select" aria-label="Language">
-          <option value="vi">VI</option>
-          <option value="en">EN</option>
-        </select>
-        <button id="toggleMenu" class="btn ghost mobile-toggle" aria-controls="menu" aria-expanded="false">☰</button>
-      </div>
+  <header class="header">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="logo" />
+      <span class="site-title">Regeneration</span>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="lang-vi">Trang chủ</a><a href="index.html" class="lang-en">Home</a></li>
+        <li><a href="news.html" class="lang-vi">Tin tức</a><a href="news.html" class="lang-en">News</a></li>
+        <li><a href="tournaments.html" class="lang-vi">Giải đấu</a><a href="tournaments.html" class="lang-en">Tournaments</a></li>
+        <li><a href="gallery.html" class="lang-vi">Thư viện</a><a href="gallery.html" class="lang-en">Gallery</a></li>
+        <li><a href="memory.html" class="lang-vi">Kỷ niệm</a><a href="memory.html" class="lang-en">Memory</a></li>
+        <li><a href="blog.html" class="lang-vi">Blog</a><a href="blog.html" class="lang-en">Blog</a></li>
+        <li><a href="about.html" class="lang-vi">Giới thiệu</a><a href="about.html" class="lang-en">About</a></li>
+        <li><a href="contact.html" class="lang-vi">Liên hệ</a><a href="contact.html" class="lang-en">Contact</a></li>
+        <li><a href="rules.html" class="lang-vi">Nội quy</a><a href="rules.html" class="lang-en">Rules</a></li>
+      </ul>
+    </nav>
+    <div class="controls">
+      <button id="langViBtn">VI</button>
+      <button id="langEnBtn">EN</button>
+      <button id="themeToggle"><i class="fa fa-adjust"></i></button>
     </div>
   </header>
-
-
   <section class="section">
-    <div class="container">
-      <h2>About / Team</h2>
-      <p>Regeneration là cộng đồng game thủ với mục tiêu lưu giữ kỷ niệm, chia sẻ niềm vui chơi game và kết nối mọi người.</p>
-      <div class="grid cols-3" style="margin-top:1rem">
-        <div class="card"><h3>Leader</h3><p>Giới thiệu ngắn.</p></div>
-        <div class="card"><h3>Moderator</h3><p>Giới thiệu ngắn.</p></div>
-        <div class="card"><h3>Content</h3><p>Giới thiệu ngắn.</p></div>
-      </div>
+    <h2><span class="lang-vi">Giới thiệu</span><span class="lang-en">About</span></h2>
+    <div class="about-section">
+      <p><span class="lang-vi">Regeneration là cộng đồng game thủ được thành lập nhằm kết nối những người yêu thích trò chơi điện tử, chia sẻ kinh nghiệm và tạo ra những kỷ niệm đáng nhớ. Chúng tôi tổ chức các sự kiện, giải đấu và nhiều hoạt động đa dạng để tất cả thành viên có thể tham gia.</span><span class="lang-en">Regeneration is a gaming community founded to connect gamers, share experiences and create memorable moments. We organize events, tournaments and various activities for all members to join.</span></p>
+      <h3><span class="lang-vi">Sứ mệnh</span><span class="lang-en">Our Mission</span></h3>
+      <p><span class="lang-vi">Chúng tôi mong muốn xây dựng một môi trường lành mạnh, tích cực và hỗ trợ lẫn nhau để mọi người có thể phát triển kỹ năng và tình bạn.</span><span class="lang-en">We aim to build a healthy, positive environment where everyone can develop skills and friendships.</span></p>
+      <h3><span class="lang-vi">Đội ngũ</span><span class="lang-en">Our Team</span></h3>
+      <p><span class="lang-vi">Đội ngũ Regeneration gồm những thành viên nhiệt huyết, luôn cố gắng mang đến những trải nghiệm tốt nhất cho cộng đồng. Nếu bạn muốn tham gia hoặc đóng góp, hãy liên hệ với chúng tôi.</span><span class="lang-en">The Regeneration team consists of passionate members who strive to provide the best experiences for the community. If you wish to join or contribute, feel free to contact us.</span></p>
     </div>
   </section>
-
-
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <div>© <span id="year"></span> Regeneration — <span data-i18n="footer.by">Xây dựng bởi cộng đồng</span> ♥</div>
-      <div class="socials">
-        <a href="https://discord.gg/8NHd7aAab2" aria-label="Discord">Discord</a>
-      </div>
-    </div>
+  <footer class="footer">
+    <p>&copy; 2025 Regeneration. <span class="lang-vi">Mọi quyền được bảo lưu.</span><span class="lang-en">All rights reserved.</span></p>
+    <p>
+      <span class="lang-vi">Theo dõi chúng tôi:</span><span class="lang-en">Follow us:</span>
+      <a href="https://discord.gg/8NHd7aAab2" target="_blank"><i class="fab fa-discord"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+    </p>
   </footer>
-  <script src="assets/js/i18n.js"></script>
-  <script src="assets/js/main.js"></script>
-
+  <script src="js/main.js" defer></script>
 </body>
 </html>
