@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Regeneration</title>
+  <meta name="description" content="Regeneration — Cộng đồng game thủ lưu giữ kỷ niệm." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" href="assets/img/logo.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Google Analytics (thay GA_MEASUREMENT_ID của bạn) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script> -->
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Trang chủ">
+        <img src="assets/img/logo.svg" alt="Logo Regeneration" width="34" height="34"/>
+        <span>Regeneration</span>
+      </a>
+      <nav id="menu" class="menu" aria-label="Main">
+        <a data-i18n="nav.home" href="index.html">Trang chủ</a>
+        <a data-i18n="nav.news" href="news.html">Tin tức</a>
+        <a data-i18n="nav.tournaments" href="tournaments.html">Giải đấu</a>
+        <a data-i18n="nav.gallery" href="gallery.html">Thư viện</a>
+        <a data-i18n="nav.memories" href="memories.html">Kỷ niệm</a>
+        <a data-i18n="nav.blog" href="blog.html">Blog</a>
+        <a data-i18n="nav.discord" href="discord.html">Discord</a>
+        <a data-i18n="nav.about" href="about.html">About/Team</a>
+        <a data-i18n="nav.contact" href="contact.html">Liên hệ</a>
+      </nav>
+      <div class="actions">
+        <button id="themeBtn" class="btn ghost" aria-label="Đổi giao diện">🌙</button>
+        <select id="langSelect" class="lang-select" aria-label="Language">
+          <option value="vi">VI</option>
+          <option value="en">EN</option>
+        </select>
+        <button id="toggleMenu" class="btn ghost mobile-toggle" aria-controls="menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="container">
+      <span class="tag" data-i18n="hero.tag">Cộng đồng game thủ • Regeneration</span>
+      <h1 data-i18n="hero.title">Lưu giữ những kỷ niệm của cộng đồng</h1>
+      <p class="notice">tao can het</p>
+      <div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem">
+        <a class="btn" data-i18n="hero.cta" href="memories.html">Xem Kỷ niệm</a>
+        <a class="btn ghost" href="https://discord.gg/8NHd7aAab2">Discord</a>
+      </div>
+      <div style="margin-top:1.5rem">
+        <input id="siteSearch" class="input" type="search" data-i18n-placeholder="search.placeholder" placeholder="Tìm kiếm..." />
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container grid cols-3">
+      <div class="card" data-searchable>
+        <h3>Tin mới</h3>
+        <p>Cập nhật hoạt động hàng tuần, recap sự kiện và thông báo.</p>
+        <a class="btn ghost" href="news.html">Xem Tin tức</a>
+      </div>
+      <div class="card" data-searchable>
+        <h3>Giải đấu</h3>
+        <p>Lịch giải, luật, đăng ký tham dự và kết quả.</p>
+        <a class="btn ghost" href="tournaments.html">Vào Giải đấu</a>
+      </div>
+      <div class="card" data-searchable>
+        <h3>Thư viện</h3>
+        <p>Ảnh & video kỷ niệm của cộng đồng (lazy-load).</p>
+        <a class="btn ghost" href="gallery.html">Mở Thư viện</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Regeneration — <span data-i18n="footer.by">Xây dựng bởi cộng đồng</span> ♥</div>
+      <div class="socials">
+        <a href="https://discord.gg/8NHd7aAab2" aria-label="Discord">Discord</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

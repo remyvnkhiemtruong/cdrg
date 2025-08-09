@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Regeneration</title>
+  <meta name="description" content="Regeneration — Cộng đồng game thủ lưu giữ kỷ niệm." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" href="assets/img/logo.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Google Analytics (thay GA_MEASUREMENT_ID của bạn) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script> -->
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Trang chủ">
+        <img src="assets/img/logo.svg" alt="Logo Regeneration" width="34" height="34"/>
+        <span>Regeneration</span>
+      </a>
+      <nav id="menu" class="menu" aria-label="Main">
+        <a data-i18n="nav.home" href="index.html">Trang chủ</a>
+        <a data-i18n="nav.news" href="news.html">Tin tức</a>
+        <a data-i18n="nav.tournaments" href="tournaments.html">Giải đấu</a>
+        <a data-i18n="nav.gallery" href="gallery.html">Thư viện</a>
+        <a data-i18n="nav.memories" href="memories.html">Kỷ niệm</a>
+        <a data-i18n="nav.blog" href="blog.html">Blog</a>
+        <a data-i18n="nav.discord" href="discord.html">Discord</a>
+        <a data-i18n="nav.about" href="about.html">About/Team</a>
+        <a data-i18n="nav.contact" href="contact.html">Liên hệ</a>
+      </nav>
+      <div class="actions">
+        <button id="themeBtn" class="btn ghost" aria-label="Đổi giao diện">🌙</button>
+        <select id="langSelect" class="lang-select" aria-label="Language">
+          <option value="vi">VI</option>
+          <option value="en">EN</option>
+        </select>
+        <button id="toggleMenu" class="btn ghost mobile-toggle" aria-controls="menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="section">
+    <div class="container">
+      <h2>Blog</h2>
+      <p class="notice">Cập nhật content bằng cách thêm bài (HTML) hoặc sau này chuyển sang Jekyll.</p>
+      <article class="card" data-searchable>
+        <h3>Nhìn lại mùa giải 2025</h3>
+        <p>Top khoảnh khắc đáng nhớ, người chơi tiêu biểu.</p>
+      </article>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Regeneration — <span data-i18n="footer.by">Xây dựng bởi cộng đồng</span> ♥</div>
+      <div class="socials">
+        <a href="https://discord.gg/8NHd7aAab2" aria-label="Discord">Discord</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
